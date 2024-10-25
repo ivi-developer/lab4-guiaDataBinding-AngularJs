@@ -1,16 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-prodcutos',
+  selector: 'app-productos',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './prodcutos.component.html',
   styleUrl: './prodcutos.component.css'
 })
-export class ProdcutosComponent {
+export class ProductosComponent {
   productos=[
-    {id:1, name:'ProductoA',price:100},
-    {id:2,name:"ProductoB",price:100},
-    {id:3,name:"ProductoC",price:100}
+    {id:1, name:'ProductoA',price:100,descuento:true},
+    {id:2,name:"ProductoB",price:100,descuento:true},
+    {id:3,name:"ProductoC",price:100,descuento:false}
   ]
 }

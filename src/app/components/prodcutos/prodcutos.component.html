@@ -1,5 +1,5 @@
 <ul>
-    <li *ngFor="let prodcuto of productos">
+    <li *ngFor="let producto of productos" [ngClass]="{'descuento':producto.descuento}"><!-- ternario -->
         {{producto.name}}-${{producto.price}}
     </li>
 </ul>
